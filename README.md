@@ -1,4 +1,4 @@
-# ten-day-loan
+# 10 day Loan Payoff Calculator for OLB
 
 > A Web tool for tellers to calculate a payment amount for a ten day loan payoff
 
