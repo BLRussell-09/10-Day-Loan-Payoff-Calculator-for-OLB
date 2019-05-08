@@ -2,6 +2,20 @@
 
 > A Web tool for tellers to calculate a payment amount for a ten day loan payoff
 
+## How does it work?
+
+> ### User will need to enter their current loan balance and interest rate.
+>
+> ![calculator form](https://raw.githubusercontent.com/BLRussell-09/10-Day-Loan-Payoff-Calculator-for-OLB/master/src/screenshots/ScreenCap.png "Calculator Form")
+>
+> ### User will also need to indicate the date of the previous payment, and the date of their intended payoff.
+>
+> ![Calendar Screenshot](https://raw.githubusercontent.com/BLRussell-09/10-Day-Loan-Payoff-Calculator-for-OLB/master/src/screenshots/CalCap.png "Calendar Screenshot")
+>
+> ### The app will then calculate their total payment amount.
+>
+> ![Calculator Filled Form](https://raw.githubusercontent.com/BLRussell-09/10-Day-Loan-Payoff-Calculator-for-OLB/master/src/screenshots/Form_filledScreen.png "Calculator Filled Form")
+
 ## Build Setup
 
 ``` bash
