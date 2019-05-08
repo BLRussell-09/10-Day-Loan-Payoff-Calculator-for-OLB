@@ -8,7 +8,7 @@
 <script>
 export default {
   name: 'App'
-}
+};
 </script>
 
 <style>
@@ -18,6 +18,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background: no-repeat center center fixed;
+  background-image: linear-gradient(to bottom, #002d72, #6cc24a);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100%;
 }
 </style>

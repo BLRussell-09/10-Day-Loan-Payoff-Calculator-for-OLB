@@ -5,25 +5,43 @@
 <script>
 export default {
   name: 'calc-button',
-  data(){
-    return {}
+  data()
+  {
+    return {};
   },
   methods: {
     buttonClick()
     {
-      var dayInMil = 1000*60*60*24
-      var estPayoff = $('#estPayoff').val()
-      var prevPay = $('#lastPay').val()
-      var estDate = new Date(estPayoff)
-      var prevDate = new Date(prevPay)
-
-      var diff = estDate.getTime() - prevDate.getTime()
-
-      var dateDiff = Math.round(diff/dayInMil)
-      console.log(dateDiff)
+      this.tendayPay();
+    },
+    dateDiff()
+    {
+      var dayInMil = 1000 * 60 * 60 * 24;
+      var estPayoff = new Date($('#estPayoff').val());
+      var prevPay = new Date($('#lastPay').val());
+      var diff = estPayoff.getTime() - prevPay.getTime();
+      var dateDiff = Math.round(diff / dayInMil);
+      return dateDiff;
+    },
+    interestCalc()
+    {
+      var intRate = $('#intRate').val();
+      var intDec = (intRate / 100);
+      var dailyInt = (intDec / 365);
+      return dailyInt;
+    },
+    tendayPay()
+    {
+      var bal = $('#loanBalance').val() * 1;
+      var days = this.dateDiff();
+      var dailyInt = this.interestCalc();
+      var accruedInt = (dailyInt * days * bal);
+      var tendayBal = (bal + accruedInt).toFixed(2);
+      $('#total').val(tendayBal);
+      console.log(tendayBal);
     }
   }
-}
+};
 </script>
 
 <style scoped>
