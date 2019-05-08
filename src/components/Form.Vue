@@ -59,6 +59,9 @@ export default {
 </script>
 
 <style scoped>
+.forms{
+    text-align: left
+}
 i{
   color: white;
 }

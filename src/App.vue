@@ -20,10 +20,11 @@ export default {
   color: #2c3e50;
   background: no-repeat center center fixed;
   background-image: linear-gradient(to bottom, #002d72, #6cc24a);
-  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
   height: 100%;
+  overflow: auto;
 }
 </style>
