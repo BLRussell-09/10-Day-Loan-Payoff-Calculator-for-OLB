@@ -36,14 +36,13 @@
 </template>
 
 <script>
-import calcBtn from '@/components/CalcButton';
 import vuetifyCal from '@/components/VuetifyDatePicker';
 import bootvcal from '@/components/BootVDatePicker';
 import bootvcalten from '@/components/BootVDateTen';
 import vbutton from '@/components/VuetifyButton';
 
 export default {
-  components: {calcBtn, vuetifyCal, bootvcal, bootvcalten, vbutton},
+  components: {vuetifyCal, bootvcal, bootvcalten, vbutton},
   mounted()
   {
     $(document).ready(() =>
