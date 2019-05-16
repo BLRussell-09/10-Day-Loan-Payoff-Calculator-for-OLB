@@ -16,12 +16,19 @@ export default {
     },
     dateDiff()
     {
-      var dayInMil = 1000 * 60 * 60 * 24;
       var estPayoff = new Date($('#estPayoff').val());
       var prevPay = new Date($('#lastPay').val());
-      var diff = estPayoff.getTime() - prevPay.getTime();
-      var dateDiff = Math.round(diff / dayInMil);
-      return dateDiff;
+      if (estPayoff > prevPay)
+      {
+        var dayInMil = 1000 * 60 * 60 * 24;
+        var diff = estPayoff.getTime() - prevPay.getTime();
+        var dateDiff = Math.round(diff / dayInMil);
+        return dateDiff;
+      }
+      else
+      {
+        alert(`Est. payoff date must occur after ${$('#lastPay').val()}`);
+      }
     },
     interestCalc()
     {
@@ -47,5 +54,6 @@ export default {
 <style scoped>
 .btn{
   text-align: center;
+  background-color: slategray;
 }
 </style>

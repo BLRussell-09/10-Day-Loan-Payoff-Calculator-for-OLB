@@ -27,4 +27,29 @@ export default {
   height: 100%;
   overflow: auto;
 }
+div.md-datepicker-body{
+    background-color: white;
+  }
+div.md-datepicker-header{
+  background-color: aqua;
+}
+input{
+  color: white;
+}
+i{
+  color: white;
+}
+
+  i.v-icon {
+    color: black !important;
+  }
+  .v-input__slot{
+    background-color: #E9ECEF !important;
+  }
+  .v-text-field__slot#payoff-date{
+    border: lightgrey solid 1px;
+  }
+  div.v-text-field__slot{
+  padding-left: 1em !important;
+}
 </style>
