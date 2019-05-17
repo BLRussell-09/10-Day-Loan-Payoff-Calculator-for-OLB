@@ -8,7 +8,7 @@
               <b-col cols="12" md="10">
                 <b-form-group>
                   <b-input-group size="md" prepend="Loan Balance ($)" >
-                    <b-form-input id="loan-balance" placeholder="0.00" :type="type"></b-form-input>
+                    <b-form-input id="loan-balance" placeholder="0.00" :type="type" pattern="[0-9]*"></b-form-input>
                   </b-input-group>
                 </b-form-group>
               </b-col>
@@ -17,7 +17,7 @@
               <b-col cols="12" md="10">
                 <b-form-group>
                   <b-input-group size="md" prepend="Interest Rate (%)">
-                    <b-form-input id="interest-rate" placeholder="0"></b-form-input>
+                    <b-form-input id="interest-rate" placeholder="0" :type="type" pattern="[0-9]*"></b-form-input>
                   </b-input-group>
                 </b-form-group>
               </b-col>
@@ -69,7 +69,7 @@ export default {
   data()
   {
     return {
-      type: 'tel',
+      type: 'number',
       textype: 'text'
     };
   }
