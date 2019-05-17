@@ -14,10 +14,6 @@ export default {
   methods: {
     buttonClick()
     {
-      var loanBal = $('#loan-balance').val();
-      var intRate = $('#interest-rate').val();
-      console.log(loanBal);
-      console.log(intRate);
       this.tendayPay();
     },
     dateDiff()
@@ -54,8 +50,6 @@ export default {
         var accruedInt = (dailyInt * days * bal);
         var tendayBal = (bal + accruedInt).toFixed(2);
         $('#total').val(`$${tendayBal}`);
-        console.log(tendayBal);
-        console.log($('#total')[0].placeholder());
       }
       else
       {
