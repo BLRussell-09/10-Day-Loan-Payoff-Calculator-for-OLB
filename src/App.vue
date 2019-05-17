@@ -12,18 +12,19 @@ export default {
 </script>
 
 <style>
-#app {
+body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   background: no-repeat center center fixed;
-  background-image: linear-gradient(to bottom, #002d72, #6cc24a);
+  background-image: linear-gradient(to bottom, #002d72 5%, #00a19b 67%);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: -32% 5%;
   height: 100%;
   overflow: auto;
 }

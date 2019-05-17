@@ -55,6 +55,7 @@ export default {
         var tendayBal = (bal + accruedInt).toFixed(2);
         $('#total').val(`$${tendayBal}`);
         console.log(tendayBal);
+        console.log($('#total')[0].placeholder());
       }
       else
       {

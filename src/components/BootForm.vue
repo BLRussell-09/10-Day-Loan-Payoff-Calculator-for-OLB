@@ -1,37 +1,45 @@
 <template>
   <div id="bootForm">
-    <div>
-      <b-row class="justify-content-center">
-        <b-col cols="6" md="3">
-          <b-form-group>
-            <b-input-group size="md" prepend="Loan Balance ($)">
-              <b-form-input id="loan-balance" placeholder="0.00"></b-form-input>
-            </b-input-group>
-          </b-form-group>
-        </b-col>
-      </b-row>
-      <b-row class="justify-content-center">
-        <b-col cols="6" md="3">
-          <b-form-group>
-            <b-input-group size="md" prepend="Interest Rate (%)">
-              <b-form-input id="interest-rate" placeholder="0"></b-form-input>
-            </b-input-group>
-          </b-form-group>
-        </b-col>
-      </b-row>
-      <b-row class="justify-content-center">
-        <b-col cols="6" md="3">
-          <bootvcal/>
-          <bootvcalten/>
-          <vbutton/>
-        </b-col>
-      </b-row>
-      <b-row class="justify-content-center">
-        <b-col cols="6" md="3">
-           <v-text-field id="total" value="$0.00" label="Box" solo readonly></v-text-field>
-        </b-col>
-      </b-row>
-    </div>
+    <b-row class="justify-content-center">
+      <b-col cols="10" md="10" sm="10">
+        <b-card id="form-card" title="10 Day Loan Payoff Calculator">
+          <div id="form-holder">
+            <b-row class="justify-content-center">
+              <b-col cols="12" md="8">
+                <b-form-group>
+                  <b-input-group size="md" prepend="Loan Balance ($)" >
+                    <b-form-input id="loan-balance" placeholder="0.00" :type="type"></b-form-input>
+                  </b-input-group>
+                </b-form-group>
+              </b-col>
+            </b-row>
+            <b-row class="justify-content-center">
+              <b-col cols="12" md="8">
+                <b-form-group>
+                  <b-input-group size="md" prepend="Interest Rate (%)">
+                    <b-form-input id="interest-rate" placeholder="0"></b-form-input>
+                  </b-input-group>
+                </b-form-group>
+              </b-col>
+            </b-row>
+            <b-row class="justify-content-center">
+              <b-col cols="12" md="8">
+                <bootvcal/>
+                <bootvcalten/>
+                <vbutton/>
+              </b-col>
+            </b-row>
+            <b-row class="justify-content-center">
+              <b-col cols="12" md="8">
+                <b-input-group size="md" prepend="Total">
+                  <b-form-input id="total" :type="textype" placeholder="$0.00" readonly/>
+                </b-input-group>
+              </b-col>
+            </b-row>
+          </div>
+        </b-card>
+      </b-col>
+    </b-row>
   </div>
 </template>
 
@@ -60,7 +68,10 @@ export default {
   },
   data()
   {
-    return {};
+    return {
+      type: 'tel',
+      textype: 'text'
+    };
   }
 };
 </script>
@@ -71,6 +82,16 @@ export default {
   }
   #bootForm
   {
+    margin-top: 2em;
+  }
+  div.input-group-text{
+    color: black;
+  }
+  #form-card{
+    background-color: grey;
+    text-align: left;
+  }
+  div.row{
     margin-top: 2em;
   }
 </style>
