@@ -91,6 +91,7 @@ export default {
   #form-card{
     background-color: white;
     text-align: left;
+    box-shadow: 5px 5px rgba(44, 62, 80, 0.8);
   }
   div.row{
     margin-top: 2em;
