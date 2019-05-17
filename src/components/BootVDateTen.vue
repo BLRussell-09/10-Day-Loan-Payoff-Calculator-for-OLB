@@ -1,7 +1,7 @@
 <template>
   <v-dialog ref="dialog" v-model="modal" :return-value.sync="date" persistent laxy full-width width="290px">
     <template v-slot:activator="{ on }">
-      <v-text-field id="payoff-date" v-model="dateFormatted" label="Payoff Date" prepend-inner-icon="event" box background-color="rgba(33,150,243,0.5)" readonly v-on="on"/>
+      <v-text-field v-on:click="dateClick" id="payoff-date" v-model="dateFormatted" label="Payoff Date" prepend-inner-icon="event" box background-color="rgba(33,150,243,0.5)" readonly v-on="on"/>
     </template>
     <v-date-picker v-model="date" header-color="blue" color="#2196f3" scrollable>
       <v-spacer></v-spacer>
@@ -26,6 +26,15 @@ export default {
     }
   },
   methods: {
+    dateClick()
+    {
+      $(document).ready(() =>
+      {
+        var newdate = new Date(this.dateFormatted);
+        var year = (newdate.getYear() + 1900);
+        $('#form-holder > div:nth-child(3) > div > div:nth-child(4) > div > div > div > div.v-picker__title.blue > div > div.v-picker__title__btn.v-date-picker-title__year').text(`${year} Payoff Date`);
+      });
+    },
     tendate()
     {
       var tendays = new Date();
@@ -79,6 +88,7 @@ export default {
     date(val)
     {
       this.dateFormatted = this.formatDate(this.date);
+      this.dateClick();
     }
   }
 };
