@@ -1,9 +1,9 @@
 <template>
   <div id="app" class="justify-content-center">
     <div class="row justify-content-center">
-      <b-col cols="6">
+      <div>
         <img src="./assets/fculogo.png">
-      </b-col>
+      </div>
     </div>
     <router-view/>
   </div>
