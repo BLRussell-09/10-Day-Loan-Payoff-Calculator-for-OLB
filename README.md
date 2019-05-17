@@ -6,15 +6,15 @@
 
 > ### User will need to enter their current loan balance and interest rate.
 >
-> ![calculator form](https://raw.githubusercontent.com/BLRussell-09/10-Day-Loan-Payoff-Calculator-for-OLB/master/src/screenshots/ScreenCap.png "Calculator Form")
+> ![calculator form](https://raw.githubusercontent.com/BLRussell-09/10-Day-Loan-Payoff-Calculator-for-OLB/master/src/screenshots/1.1%20ScreenCap.png "Calculator Form")
 >
 > ### User will also need to indicate the date of the previous payment, and the date of their intended payoff.
 >
-> ![Calendar Screenshot](https://raw.githubusercontent.com/BLRussell-09/10-Day-Loan-Payoff-Calculator-for-OLB/master/src/screenshots/CalCap.png "Calendar Screenshot")
+> ![Calendar Screenshot](https://raw.githubusercontent.com/BLRussell-09/10-Day-Loan-Payoff-Calculator-for-OLB/master/src/screenshots/1.1%20Cal.png "Calendar Screenshot")
 >
 > ### The app will then calculate their total payment amount.
 >
-> ![Calculator Filled Form](https://raw.githubusercontent.com/BLRussell-09/10-Day-Loan-Payoff-Calculator-for-OLB/master/src/screenshots/Form_filledScreen.png "Calculator Filled Form")
+> ![Calculator Filled Form](https://raw.githubusercontent.com/BLRussell-09/10-Day-Loan-Payoff-Calculator-for-OLB/master/src/screenshots/1.1%20Total.png "Calculator Filled Form")
 
 ## Build Setup
 
