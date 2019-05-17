@@ -1,6 +1,10 @@
 <template>
-  <div id="app">
-    <img src="./assets/fculogo.png">
+  <div id="app" class="justify-content-center">
+    <div class="row justify-content-center">
+      <b-col cols="6">
+        <img src="./assets/fculogo.png">
+      </b-col>
+    </div>
     <router-view/>
   </div>
 </template>
