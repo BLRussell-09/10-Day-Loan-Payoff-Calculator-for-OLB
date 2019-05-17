@@ -3,7 +3,7 @@
     <template v-slot:activator="{ on }">
       <v-text-field id="payoff-date" v-model="dateFormatted" label="Payoff Date" prepend-inner-icon="event" box background-color="white" readonly v-on="on"/>
     </template>
-    <v-date-picker v-model="date" header-color="blue" color="black" scrollable>
+    <v-date-picker v-model="date" header-color="blue" color="#2196f3" scrollable>
       <v-spacer></v-spacer>
       <v-btn flat color="primary" @click="modal = false">Cancel</v-btn>
       <v-btn flat color="primary" v-on:click="dateDiff" @click="$refs.dialog.save(date)">OK</v-btn>
