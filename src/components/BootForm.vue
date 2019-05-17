@@ -1,11 +1,11 @@
 <template>
   <div id="bootForm">
     <b-row class="justify-content-center">
-      <b-col cols="10" md="10" sm="10">
+      <b-col cols="10" md="8" sm="10">
         <b-card id="form-card" title="10 Day Loan Payoff Calculator">
           <div id="form-holder">
             <b-row class="justify-content-center">
-              <b-col cols="12" md="8">
+              <b-col cols="12" md="10">
                 <b-form-group>
                   <b-input-group size="md" prepend="Loan Balance ($)" >
                     <b-form-input id="loan-balance" placeholder="0.00" :type="type"></b-form-input>
@@ -14,7 +14,7 @@
               </b-col>
             </b-row>
             <b-row class="justify-content-center">
-              <b-col cols="12" md="8">
+              <b-col cols="12" md="10">
                 <b-form-group>
                   <b-input-group size="md" prepend="Interest Rate (%)">
                     <b-form-input id="interest-rate" placeholder="0"></b-form-input>
@@ -23,14 +23,14 @@
               </b-col>
             </b-row>
             <b-row class="justify-content-center">
-              <b-col cols="12" md="8">
+              <b-col cols="12" md="10">
                 <bootvcal/>
                 <bootvcalten/>
                 <vbutton/>
               </b-col>
             </b-row>
             <b-row class="justify-content-center">
-              <b-col cols="12" md="8">
+              <b-col cols="12" md="10">
                 <b-input-group size="md" prepend="Total">
                   <b-form-input id="total" :type="textype" placeholder="$0.00" readonly/>
                 </b-input-group>
@@ -85,10 +85,11 @@ export default {
     margin-top: 2em;
   }
   div.input-group-text{
-    color: black;
+    background-color: rgb(33,150,243);
+    color: white;
   }
   #form-card{
-    background-color: grey;
+    background-color: white;
     text-align: left;
   }
   div.row{

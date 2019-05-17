@@ -1,7 +1,7 @@
 <template>
   <v-dialog ref="dialog" v-model="modal" :return-value.sync="date" persistent laxy full-width width="290px">
     <template v-slot:activator="{ on }">
-      <v-text-field id="payoff-date" v-model="dateFormatted" label="Payoff Date" prepend-inner-icon="event" box background-color="white" readonly v-on="on"/>
+      <v-text-field id="payoff-date" v-model="dateFormatted" label="Payoff Date" prepend-inner-icon="event" box background-color="rgba(33,150,243,0.5)" readonly v-on="on"/>
     </template>
     <v-date-picker v-model="date" header-color="blue" color="#2196f3" scrollable>
       <v-spacer></v-spacer>
