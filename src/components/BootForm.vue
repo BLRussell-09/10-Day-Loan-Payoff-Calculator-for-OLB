@@ -1,5 +1,8 @@
 <template>
   <div id="bootForm">
+    <b-alert v-model="showDismissibleAlert" variant="danger" dismissible>
+      Dismissible Alert!
+    </b-alert>
     <b-row class="justify-content-center">
       <b-col cols="10" md="8" sm="10">
         <b-card id="form-card" title="10 Day Loan Payoff Calculator">
@@ -26,7 +29,7 @@
               <b-col cols="12" md="10">
                 <bootvcal/>
                 <bootvcalten/>
-                <vbutton/>
+                <vbutton @click="showDismissibleAlert=true"/>
               </b-col>
             </b-row>
             <b-row class="justify-content-center">
@@ -70,7 +73,8 @@ export default {
   {
     return {
       type: 'number',
-      textype: 'text'
+      textype: 'text',
+      showDismissibleAlert: false
     };
   }
 };
