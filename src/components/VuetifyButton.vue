@@ -1,6 +1,6 @@
 <template>
-<div>
-  <v-btn color="rgb(33,150,243)" v-on:click="buttonClick">Calculate</v-btn>
+<div id="btnContainer">
+  <v-btn class="white--text" color="#6cc24a" v-on:click="buttonClick" id="calc-btn">Calculate</v-btn>
 </div>
 </template>
 

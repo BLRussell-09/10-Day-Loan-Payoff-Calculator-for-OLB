@@ -1,10 +1,6 @@
 <template>
   <div id="app" class="justify-content-center">
-    <div class="row justify-content-center">
-      <div>
-        <img src="./assets/fculogo.png">
-      </div>
-    </div>
+
     <router-view/>
   </div>
 </template>
@@ -16,44 +12,38 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: "BoosterFY";
+  src: url('/assets/fonts/BoosterNextFY.eot');
+  src: url("./assets/fonts/BoosterNextFY.ttf") format("truetype"),
+       url("./assets/fonts/BoosterNextFY.woff") format('woff');
+}
 body {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'BoosterFY', Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background: no-repeat center center fixed;
-  background-image: linear-gradient(to bottom, #002d72 5%, #00a19b 67%);
+  background:
+    url('assets/fcuO.png') no-repeat center center fixed,
+    linear-gradient(to bottom, #002d72, #00a19b 152%) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  background-position: -32% 5%;
+  background-size: 41%, cover;
+  background-position: -25% 4%;
   height: 100%;
   overflow: auto;
 }
-/* div.md-datepicker-body{
-    background-color: white;
-  } */
-/* div.md-datepicker-header{
-  background-color: aqua;
-} */
-input{
+input {
   color: white;
 }
-i{
+i {
   color: white;
 }
-
-  i.v-icon {
+i.v-icon {
     color: black !important;
   }
-  /* .v-input__slot{
-    background-color: #E9ECEF !important;
-  } */
-  /* .v-text-field__slot#payoff-date{
-    border: lightgrey solid 1px;
-  } */
   div.v-text-field__slot{
   padding-left: 1em !important;
 }
