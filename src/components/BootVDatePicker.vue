@@ -1,7 +1,7 @@
 <template>
   <v-dialog ref="dialog" v-model="modal" :return-value.sync="date" persistent laxy full-width width="290px" id="last-payment-dialogue">
     <template v-slot:activator="{ on }">
-      <v-text-field v-on:click="dateClick" class="my-text-field" id="last-payment" v-model="dateFormatted" label="Last Payment Date" prepend-inner-icon="event"  readonly v-on="on" box background-color="rgba(33,150,243,0.5)" color="black"/>
+      <v-text-field v-on:click="dateClick" class="my-text-field" id="last-payment" v-model="dateFormatted" label="Last Payment Date" prepend-inner-icon="event"  readonly v-on="on" box background-color="white" color="black"/>
     </template>
     <v-date-picker id="last-payment-cal" v-model="date" header-color="blue" color="#2196f3" scrollable>
       <v-spacer></v-spacer>
