@@ -1,7 +1,7 @@
 <template>
   <div id="bootForm">
     <b-row class="justify-content-center">
-      <b-col cols="10" md="8" sm="10">
+      <b-col cols="8" md="8" sm="10" id="form-col">
         <b-card id="form-card">
           <img src="@/assets/fculogo.png">
           <h2>10 Day Loan Payoff Calculator</h2>
@@ -88,6 +88,9 @@ export default {
 </script>
 
 <style scoped>
+  #form-col{
+    padding-bottom: 4em;
+  }
   input{
     color: black;
   }
